@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+        }
+        .main {
+            text-align: center; 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+<div class="main">
+    <h2>Support Us</h2>
+
+    <form action="/submit-form" method="post">
+        <!-- Text Input -->
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        </div>
+
+        <!-- Email Input -->
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        </div>
+
+        <!-- Password Input -->
+        <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+        <label>Gender:</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label><br>
+        </div>
+
+        <!-- Checkbox --><div>
+        <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label><br>
+        </div>
+
+       
+
+        <!-- Submit Button --><div>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
